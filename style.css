@@ -5,13 +5,16 @@ box-sizing:border-box;
 font-family:'Cairo',sans-serif;
 }
 
+html,body{
+height:100%;
+}
+
 body{
 background:linear-gradient(180deg,#091426,#121d40);
 color:#fff;
-min-height:100vh;
 overflow-x:hidden;
-padding:25px;
-margin:0;
+display:flex;
+flex-direction:column;
 }
 
 .stars{
@@ -30,7 +33,12 @@ z-index:-1;
 width:100%;
 max-width:900px;
 margin:auto;
+padding:30px 20px;
 text-align:center;
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
 h1{
@@ -46,7 +54,7 @@ color:#ffbe2e;
 .subtitle{
 font-size:24px;
 color:#d4d8ea;
-margin-bottom:70px;
+margin-bottom:60px;
 }
 
 .fact-card{
@@ -80,8 +88,8 @@ font-size:42px;
 line-height:1.8;
 min-height:220px;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 }
 
 .btn{
@@ -117,13 +125,44 @@ border-radius:18px;
 color:#fff;
 font-size:22px;
 cursor:pointer;
+transition:.3s;
 }
 
 .actions button:hover{
 background:#28346b;
 }
 
+.footer{
+width:100%;
+padding:30px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.12);
+background:rgba(0,0,0,.15);
+}
+
+.footer a{
+color:#fff;
+text-decoration:none;
+margin:0 12px;
+font-size:20px;
+font-weight:bold;
+}
+
+.footer a:hover{
+color:#ffbe2e;
+}
+
+.footer p{
+margin:12px 0;
+color:#bfc6e0;
+font-size:17px;
+}
+
 @media(max-width:700px){
+
+.container{
+padding:20px 15px;
+}
 
 h1{
 font-size:48px;
@@ -131,7 +170,7 @@ font-size:48px;
 
 .subtitle{
 font-size:18px;
-margin-bottom:50px;
+margin-bottom:45px;
 }
 
 .brain{
@@ -147,7 +186,7 @@ padding:70px 20px 40px;
 
 #fact{
 font-size:28px;
-min-height:150px;
+min-height:160px;
 }
 
 .btn{
@@ -155,51 +194,18 @@ font-size:22px;
 padding:18px;
 }
 
+.actions{
+flex-direction:column;
+}
+
 .actions button{
-font-size:16px;
-padding:14px;
+font-size:18px;
+padding:15px;
 }
-}
-.footer{
-margin-top:70px;
-padding:30px 20px;
-text-align:center;
-color:#bfc6e0;
+
+.footer a{
+display:inline-block;
+margin:8px;
 font-size:18px;
 }
-
-.footer a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-font-weight:bold;
-}
-
-.footer a:hover{
-color:#ffbf33;
-}
-
-.footer p{
-margin:12px 0;
-}
-.footer{
-width:100%;
-margin-top:80px;
-padding:40px 20px;
-text-align:center;
-border-top:1px solid rgba(255,255,255,.1);
-}
-
-.footer a{
-color:#fff;
-text-decoration:none;
-margin:0 12px;
-font-size:20px;
-font-weight:bold;
-}
-
-.footer p{
-margin-top:15px;
-color:#aaa;
-font-size:17px;
 }
