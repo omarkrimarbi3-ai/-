@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>هل تعلم؟</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<div class="stars"></div>
+
 <div class="container">
-    <h1>💡 هل تعلم؟</h1>
 
-    <div id="fact">
-        اضغط على الزر لعرض معلومة.
-    </div>
+<h1>هل <span>تعلم؟</span> 💡</h1>
 
-    <button onclick="newFact()">معلومة جديدة</button>
+<p class="subtitle">
+معلومات ممتعة ومدهشة كل يوم
+</p>
+
+<div class="fact-card">
+
+<div class="brain">
+🧠
+</div>
+
+<p id="fact">
+اضغط على الزر لعرض معلومة.
+</p>
+
+</div>
+
+<button onclick="newFact()" class="btn">
+🔄 معلومة جديدة
+</button>
+
+<div class="actions">
+
+<button>📤 مشاركة</button>
+
+<button>📋 نسخ</button>
+
+<button>❤️ المفضلة</button>
+
+</div>
+
 </div>
 
 <script src="facts.js"></script>
 <script src="script.js"></script>
 
 </body>
+
 </html>
